@@ -6,69 +6,48 @@
 - Aida HAOUAS
 - Mohamed Massamba SENE
 
-## Introduction
-Les utilisateurs des plateformes de streaming, tels que Netflix, souhaitent explorer le contenu disponible de manière personnalisée et analytique. Cependant, il est difficile pour eux de comprendre les caractéristiques du catalogue, comme la diversité des genres, la répartition géographique, les tendances au fil du temps, ou encore les comparatifs avec d'autres plateformes. Ce manque de visibilité limite leur capacité à choisir des plateformes adaptées à leurs préférences ou à découvrir des contenus spécifiques.
-Nous cherchons donc à fournir une visualisation interactive  qui permettrait aux utilisateurs d'explorer et d'analyser les catalogues de streaming.
+Ce projet vise à offrir une analyse approfondie et des visualisations interactives sur les contenus disponibles sur les principales plateformes de streaming : Netflix, Hulu, Disney+ et Prime Video. À travers des graphiques dynamiques, les utilisateurs pourront explorer la répartition géographique des contenus, identifier les tendances en matière de genres et classifications d’âge, et comparer les évolutions des bibliothèques des différentes plateformes.
 
-Les données utilisées sont issues de [Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+Les données utilisées pour ce projet proviennent de diverses sources publiques disponibles sur les bibliothèques de ces plateformes. Elles incluent des informations détaillées comme les genres, les pays d’origine, les années de production, ainsi que la classification des contenus. 
 
-## Public cible et objectifs clés
-Le public principal de ce projet inclut :
+Ce projet met en œuvre les techniques de visualisation pour transformer des données complexes en insights facilement compréhensibles, il est disponible en cliquant sur ce [lien](https://ismailchakrane.github.io/StreamViz/)
 
-- Le grand public : Les personnes curieuse qui souhaitent mieux comprendre et choisir les contenus au niveau des plateformes de streaming
-- Parents : Ceux qui cherchent à filtrer les contenus en fonction des classifications d'âge pour protéger leurs enfants.
-- Analystes de contenu ou curateurs : Les personnes intéressées par les tendances des plateformes pour créer des recommandations ou effectuer des études comparatives.
+## Questions Clés
 
-Les tâches clés que nous souhaitons que le projet permettent d'effectuer sont :
-- Analyser la répartition géographique et générique des contenus
+Le projet répond aux questions suivantes :
+- Comment les contenus sont-ils répartis selon les pays d'origine ?
+- Quels genres dominent sur chaque plateforme de streaming ?
+- Comment les quantités de contenus ont-elles évolué au fil des années ?
+- Quelle est la répartition des films et séries sur chaque plateforme ?
+- Quelles différences majeures peut-on observer entre Netflix, Hulu, Disney+ et Prime Video ?
+- Comment les classifications d’âge varient-elles selon les genres ou les plateformes ?
 
-Ceci aide les utilisateur à à découvrir des contenus diversifiés.
+## Visualisations Principales
 
-Par exemple, permettre aux utilisateurs d’explorer quels pays produisent le plus de contenus dans un genre spécifique (commédie, action, ...)
+1. **Comparaison Globale des Plateformes de Streaming**  
+   Cette section offre une analyse comparative des catalogues de contenu des principales plateformes de streaming, en se concentrant sur des métriques clés telles que la répartition des genres, les classifications d'âge et les tendances temporelles. Des filtres interactifs permettent d'affiner l'exploration par année, continent ou type de contenu.
 
-- Comparer les catalogues de plusieurs plateformes en termes de genres, durée et classification d'âge
+2. **Quantité de Contenu par Année**  
+   Un graphique illustrant l'évolution du nombre de contenus ajoutés chaque année sur les différentes plateformes, permettant d'identifier les tendances d'expansion ou de réduction des catalogues au fil du temps.
 
-Ceci permettrait de fournir aux utilisateurs des indicateur pour choisir la plateforme qui correspond le mieux à leurs besoins et préférences.
+3. **Durée des Films par Année (en minutes)**  
+   Cette visualisation présente la durée moyenne des films ajoutés chaque année, offrant un aperçu des tendances en matière de longueur des films sur les différentes plateformes.
 
-Par exemple, afficher un graphique comparatif entre Netflix, Hulu, Disney+, et Prime Video pour identifier laquelle a le plus de contenus pour enfants ou les films les plus longs.
+4. **Nombre de Saisons par Année**  
+   Un graphique montrant le nombre total de saisons de séries télévisées ajoutées chaque année, permettant d'analyser l'évolution de la production de séries sur les plateformes.
 
-- Visualiser les tendances dans l’évolution du contenu au fil du temps
+5. **Répartition du Contenu par Genre**  
+   Un diagramme circulaire ou à barres illustrant la distribution des différents genres de contenu disponibles sur chaque plateforme, aidant à comprendre les préférences de contenu de chaque service de streaming.
 
-Ceci permettrait de révèler des priorités stratégiques des plateformes et aide à anticiper les changements.
+6. **Répartition du Contenu par Classification d'Âge**  
+   Cette visualisation analyse la distribution des classifications d'âge (telles que TV-G, TV-MA, PG, etc.) des contenus sur les plateformes, offrant un aperçu des types de publics ciblés par chaque service.
 
-Par exemple, montrer l'augmentation ou la diminution de certaines catégories comme les documentaires ou les émissions internationales depuis 2010.
+7. **Carte Géographique des Contenus**
+   Cette visualisation présente une carte interactive représentant la répartition des séries et films par pays.
 
-Ces tâches sont essentielles car elles répondent directement à des besoins pratiques.
+Ces visualisations interactives permettent aux utilisateurs d'explorer en profondeur les catalogues des principales plateformes de streaming, en fournissant des insights précieux sur la diversité et les tendances des contenus proposés. 
 
-- Découverte et décision : explorer et choisir en connaissance de cause
-- Personnalisation : permmettre aux parents ou spectateurs de rechercher des contenus spécifiques, adaptés à leur usage
-- Analyse comparative : permettre d’avoir une vue d’ensemble sur l’industrie du streaming et ses évolutions
+## Technologies Utilisées
 
-## Sources de données choisies
-
-### Catalogues des plateformes de streaming (Netflix, Hulu, Disney+, Prime Video)
-
-- **Intérêt principal**
-
-Catalogue détaillé avec des colonnes clés (titre, genre, durée, pays, classification d’âge)
-Permet des visualisation par plateforme et des comparaisons multi-plateformes sur la diversité et les tendances des contenus.
-
-- **Limites**
-
-Incomplétude pour certaines colonnes (réalisateurs, acteurs) et absence de données sur l’audience ou la rentabilité.
-
-### Plan de fusion et plan de secours
-
-- **Fusion**
-
-Combiner les catalogues des plateformes pour comparer genres, durées, et classifications et si possible enrichir avec des données externes comme par exemple IMDb ou Rotten Tomatoes pour ajouter des métadonnées enrichies comme les notes des utilisateurs ...
-
-- **Plan B**
-
-En cas de problème imprévu avec les données Netflix, comme des colonnes incomplètes (*director*, *cast*) ou des incohérences (genres multiples, données ambiguës), l’analyse se concentrera sur les colonnes fiables telles que *genre*, *pays*, *durée*, et *release_year*. Les catégories seront nettoyées et standardisées pour garantir des résultats cohérents. Si certaines données sont déséquilibrées (ex. surreprésentation de certains pays), des visualisations proportionnelles seront utilisées pour éviter les biais. En cas de problème technique ou de fichier corrompu, un échantillon des données sera exploité pour maintenir la validité des analyses.
-
-## Choix techniques
-
-- HTML / CSS
-- D3.js ([Official Website](https://d3js.org/))
-- Tailwind CSS ([Official Website](https://tailwindcss.com/))
+- **D3.js** : Bibliothèque JavaScript pour la création de graphiques interactifs.
+- **HTML & TailwindCSS** : Structuration et style des visualisations web.

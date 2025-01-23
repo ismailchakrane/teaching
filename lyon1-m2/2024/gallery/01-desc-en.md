@@ -1,4 +1,4 @@
-# StreamViz - Visualization of the Evolution and Distribution of Content on Streaming Platforms
+# StreamViz - Visualizing the Evolution and Distribution of Content on Streaming Platforms
 
 **Team Members**  
 - Rida ASRI  
@@ -6,68 +6,48 @@
 - Aida HAOUAS  
 - Mohamed Massamba SENE  
 
-## Introduction  
-Users of streaming platforms like Netflix often wish to explore available content in a personalized and analytical way. However, understanding catalog characteristics—such as genre diversity, geographical distribution, trends over time, or comparisons with other platforms—is challenging. This lack of insight limits their ability to select platforms that align with their preferences or discover specific content.  
-Our goal is to provide an interactive visualization tool that enables users to explore and analyze streaming catalogs.  
+This project aims to provide an in-depth analysis and interactive visualizations of the content available on major streaming platforms: Netflix, Hulu, Disney+, and Prime Video. Through dynamic charts, users can explore the geographical distribution of content, identify trends in genres and age ratings, and compare the evolution of the libraries across different platforms.
 
-The data used is sourced from [Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows).  
+The data used for this project comes from various public sources available on the platforms' libraries. It includes detailed information such as genres, countries of origin, production years, and content classifications.  
 
-## Target Audience and Key Objectives  
+This project implements visualization techniques to transform complex data into easily understandable insights. It is accessible via this [link](https://ismailchakrane.github.io/StreamViz/).
 
-The primary audience for this project includes:  
+## Key Questions  
 
-- **The General Public**: People curious to better understand and select content across streaming platforms.  
-- **Parents**: Individuals seeking to filter content by age rating to protect their children.  
-- **Content Analysts or Curators**: Professionals interested in platform trends to create recommendations or conduct comparative studies.  
+The project addresses the following questions:  
+- How is content distributed by country of origin?  
+- Which genres dominate on each streaming platform?  
+- How has the quantity of content evolved over the years?  
+- What is the distribution of movies and TV shows on each platform?  
+- What major differences can be observed between Netflix, Hulu, Disney+, and Prime Video?  
+- How do age ratings vary by genre or platform?  
 
-### Key Tasks  
+## Main Visualizations  
 
-The project aims to allow users to perform the following tasks:  
+1. **Global Comparison of Streaming Platforms**  
+   This section provides a comparative analysis of the content catalogs of major streaming platforms, focusing on key metrics such as genre distribution, age classifications, and temporal trends. Interactive filters allow users to refine their exploration by year, continent, or content type.  
 
-1. **Analyze the Geographic and Genre Distribution of Content**  
-   - Helps users discover diverse content.  
-   - For example, users can explore which countries produce the most content in a specific genre (e.g., comedy, action).  
+2. **Content Quantity by Year**  
+   A chart illustrating the evolution of the number of contents added each year on different platforms, helping to identify trends in library expansion or contraction over time.  
 
-2. **Compare Catalogs Across Platforms in Terms of Genre, Duration, and Age Rating**  
-   - Provides users with indicators to choose the platform that best suits their needs and preferences.  
-   - For instance, a comparative chart of Netflix, Hulu, Disney+, and Prime Video to identify which platform has the most child-friendly content or the longest films.  
+3. **Movie Duration by Year (in Minutes)**  
+   This visualization shows the average duration of movies added each year, offering insights into trends in movie length across platforms.  
 
-3. **Visualize Content Trends Over Time**  
-   - Reveals platform strategies and helps anticipate changes.  
-   - For example, displaying the growth or decline of categories like documentaries or international shows since 2010.  
+4. **Number of Seasons by Year**  
+   A graph showing the total number of TV show seasons added each year, allowing an analysis of the evolution of series production on the platforms.  
 
-These tasks address practical needs:  
+5. **Content Distribution by Genre**  
+   A pie chart or bar chart illustrating the distribution of different content genres available on each platform, helping to understand the content preferences of each streaming service.  
 
-- **Discovery and Decision-Making**: Empowering users to explore and choose content confidently.  
-- **Personalization**: Allowing parents or viewers to search for specific, tailored content.  
-- **Comparative Analysis**: Offering an overview of the streaming industry and its evolution.  
+6. **Content Distribution by Age Rating**  
+   This visualization analyzes the distribution of age ratings (such as TV-G, TV-MA, PG, etc.) of the content on the platforms, offering insights into the types of audiences targeted by each service.  
 
-## Selected Data Sources  
+7. **Geographical Content Map**  
+   An interactive map representing the distribution of TV shows and movies by country.  
 
-### Streaming Platform Catalogs (Netflix, Hulu, Disney+, Prime Video)  
+These interactive visualizations allow users to deeply explore the catalogs of major streaming platforms, providing valuable insights into the diversity and trends of the content offered.  
 
-- **Key Benefits**  
-  - Detailed catalogs with essential columns (title, genre, duration, country, age rating).  
-  - Enable platform-specific visualizations and cross-platform comparisons of content diversity and trends.  
+## Technologies Used  
 
-- **Limitations**  
-  - Incomplete data for certain columns (e.g., directors, actors).  
-  - Absence of audience or profitability metrics.  
-
-### Integration Plan and Backup Strategy  
-
-- **Integration**  
-  - Combine platform catalogs to compare genres, durations, and age ratings.  
-  - Enhance with external data sources like IMDb or Rotten Tomatoes for enriched metadata such as user ratings.  
-
-- **Backup Plan**  
-  - If issues arise with Netflix data, such as incomplete columns (*director*, *cast*) or inconsistencies (multiple genres, ambiguous data), the analysis will focus on reliable columns like *genre*, *country*, *duration*, and *release_year*.  
-  - Categories will be cleaned and standardized to ensure consistent results.  
-  - If data is imbalanced (e.g., certain countries overrepresented), proportional visualizations will mitigate bias.  
-  - In case of technical issues or corrupted files, a data sample will be used to maintain analysis validity.  
-
-## Technical Choices
-
-- **HTML / CSS**  
-- **D3.js** ([Official Website](https://d3js.org/))  
-- **Tailwind CSS** ([Official Website](https://tailwindcss.com/))  
+- **D3.js**: A JavaScript library for creating interactive visualizations.  
+- **HTML & TailwindCSS**: For structuring and styling the web visualizations.  
