@@ -1,7 +1,5 @@
 # StreamViz - Visualization of the Evolution and Distribution of Content on Streaming Platforms
 
-![Teaser](01-teaser.png)
-
 **Team Members**  
 - Rida ASRI  
 - Ismail CHAKRANE  
@@ -68,59 +66,8 @@ These tasks address practical needs:
   - If data is imbalanced (e.g., certain countries overrepresented), proportional visualizations will mitigate bias.  
   - In case of technical issues or corrupted files, a data sample will be used to maintain analysis validity.  
 
-## Related Work  
-
-1. **Netflix Data Visualization with Python**  
-   - Available on Kaggle: [Link](https://www.kaggle.com/code/joshuaswords/netflix-data-visualization)  
-   - Highlights key catalog aspects such as geographic distribution, dominant genres, and temporal trends.  
-   - Recommendations for improvement include:
-     - Consistent visual styles and palettes.  
-     - More granular, less dense visualizations.  
-     - Adding interactive elements like dynamic filters for genres or countries.  
-
-2. **Netflix Dashboard with Tableau**  
-   - Available here: [Link](https://public.tableau.com/app/profile/gulshan.gedam/viz/NetflixProject-TableauDashboard/Netflix?publish=yes)  
-   - Effectively illustrates genre diversity, geographical content distribution, and temporal trends.  
-   - Suggestions for enhancement:
-     - Add interactivity (click-based exploration, cross-filters).  
-     - Include comparisons with platforms like Amazon Prime or Disney+.  
-     - Simplify visuals for better usability.  
-
-3. **Netflix Dashboard with PowerBI**  
-   - Available here: [Link](https://buymeacoffee.com/jiejenn/e/131884)  
-   - Strengths:
-     - Attention-grabbing use of red and black for a professional appearance.  
-     - Well-balanced graphs for smooth navigation.  
-     - A geographical map for country-based content distribution.  
-   - Recommendations:
-     - Improve text readability (e.g., avoid red on black for visually impaired users).  
-     - Reduce information density for clarity.  
-     - Add granular details to temporal graphs and incorporate interactive filters for enhanced exploration.  
-
-## Organization  
-
-Our team uses a Discord group for efficient coordination. Meetings are structured as follows:  
-- Weekly review session on Sundays (1 hour) for detailed discussions.  
-- Quick progress check on Wednesdays (15 minutes) to stay on track.  
-- Meetings occur at 8:30 PM.  
-
-### Role Distribution  
-- **Aida & Ismail**: Design and development with D3.js.  
-- **Rida**: Data preprocessing to ensure reliability.  
-- **Massamba**: Support across tasks and project supervision.  
-
-**Note**: While five contributors are listed, Ismail CHAKRANE uses two GitHub accounts (Ismailchakrane and Ichakran), but they represent the same individual making commits.  
-
-## Technical Choices  
+## Technical Choices
 
 - **HTML / CSS**  
 - **D3.js** ([Official Website](https://d3js.org/))  
 - **Tailwind CSS** ([Official Website](https://tailwindcss.com/))  
-
-## Progress Tracker  
-
-A project progress tracker is available here: [View Tracker](https://docs.google.com/document/d/1OSPjtboN29_386HHnLslqIUPYdWn3UbKAYVxVNWTt7s/edit?tab=t.0#heading=h.b7mly7b1dew9).
-
-## Demo
-
-![Demo](01-gif.gif)
