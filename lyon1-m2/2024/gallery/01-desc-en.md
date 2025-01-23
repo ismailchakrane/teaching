@@ -1,6 +1,6 @@
 # StreamViz - Visualization of the Evolution and Distribution of Content on Streaming Platforms
 
-![Teaser](images/teaser.png)
+![Teaser](01-teaser.png)
 
 **Team Members**  
 - Rida ASRI  
@@ -123,4 +123,4 @@ A project progress tracker is available here: [View Tracker](https://docs.google
 
 ## Demo
 
-![Demo](images/demo.gif)
+![Demo](01-gif.gif)

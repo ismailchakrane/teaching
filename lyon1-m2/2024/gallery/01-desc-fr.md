@@ -1,6 +1,6 @@
 # StreamViz - Visualiation de l'évolution et de la distribution des contenus sur les plateformes de streaming
 
-![Teaser](images/teaser.png)
+![Teaser](01-teaser.png)
 
 **Membres du groupe**
 - Rida ASRI
@@ -117,4 +117,4 @@ Un cachier d'avancement permettant le suivi du projet est disponible en suivant 
 
 ## Démo
 
-![Demo](images/demo.gif)
+![Demo](01-gif.gif)
